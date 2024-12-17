@@ -8,16 +8,5 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-  constructor(private router: Router) { }
   
-  title = 'Topic';
-  menuActive = false;
-
-  toggleMenu() {
-    this.menuActive = !this.menuActive;
-  }
-
-  navigateToAbout(route:string) {
-    this.router.navigate([route]);
-  }
 }

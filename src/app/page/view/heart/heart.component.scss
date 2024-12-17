@@ -1,0 +1,70 @@
+.stats-container {
+    text-align: center;
+    background-color: #202124;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: auto;
+  
+    .current-rate {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  
+    .chart-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+  
+      .circular-chart {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: conic-gradient(
+          #ff6384 0%,
+          #ff6384 40%,
+          #ccc 40%,
+          #ccc 100%
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+  
+      .stat-box {
+        text-align: center;
+  
+        p {
+          font-size: 0.9rem;
+          margin: 0;
+        }
+  
+        h2 {
+          font-size: 1.5rem;
+          margin: 5px 0 0;
+        }
+      }
+    }
+  
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+  
+      button {
+        font-size: 1rem;
+      }
+    }
+  }
+  

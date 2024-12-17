@@ -1,0 +1,26 @@
+<div class="main-container">
+    <div class="container">
+      <!-- 側邊選單 -->
+      <div class="sidebar" [class.active]="menuActive">
+        <button class="router-button" (click)="navigateToHeart('heart')" >指標分析</button>
+        <button class="router-button" (click)="navigateToHeart('medicine')">藥物管理</button>
+        <button class="router-button" >異常警報</button>
+        <button class="router-button" >緊急呼叫</button>
+        <button class="router-button" >智能聊天</button>
+      </div>
+  
+      <!-- 右側使用者資料區 -->
+      <div class="user-info">
+        <h2>使用者資料</h2>
+        <div>姓名: 張三</div>
+        <div>性別: 男</div>
+        <div>血壓: 120/80 mmHg</div>
+        <div>心跳: 72 bpm</div>
+        <div>呼吸平率: 16 次/分鐘</div>
+        <button class="menu-button" (click)="toggleMenu()">開啟選單</button>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+  
+  
