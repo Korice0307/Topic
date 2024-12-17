@@ -1,70 +1,58 @@
 .stats-container {
-    text-align: center;
-    background-color: #202124;
-    color: white;
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 400px;
-    margin: auto;
-  
-    .current-rate {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-  
-    .chart-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 0;
-  
-      .circular-chart {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: conic-gradient(
-          #ff6384 0%,
-          #ff6384 40%,
-          #ccc 40%,
-          #ccc 100%
-        );
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        font-weight: bold;
-        text-transform: uppercase;
+  text-align: center;
+  background-color: #202124;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: auto;
+
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00ffcc;
+  }
+
+  .tab-group {
+    .mat-tab-label {
+      background-color: #1e1e2f;
+      color: #e0e0e0;  // 淺灰色的文字顏色
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: #00ffcc;
+        color: black;  // Hover 狀態下文字顏色為黑色
+      }
+
+      &.mat-tab-label-active {
+        background-color: #00ffcc;
+        color: black;  // 活躍的 tab 文字顏色為黑色
       }
     }
-  
-    .stats {
-      display: flex;
-      justify-content: space-around;
-      margin: 20px 0;
-  
-      .stat-box {
-        text-align: center;
-  
-        p {
-          font-size: 0.9rem;
-          margin: 0;
-        }
-  
-        h2 {
-          font-size: 1.5rem;
-          margin: 5px 0 0;
-        }
+
+    .mat-tab-body {
+      background-color: #1e1e2f;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 10px;
+
+      h2 {
+        font-size: 1.5rem;
+        color: #00ffcc;
       }
-    }
-  
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-  
-      button {
-        font-size: 1rem;
+
+      p {
+        font-size: 1.1rem;
+        margin: 10px 0;
+        color: #e0e0e0;
+
+        strong {
+          color: #ffffff;
+        }
       }
     }
   }
-  
+}
