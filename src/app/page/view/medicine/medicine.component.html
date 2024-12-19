@@ -1,1 +1,45 @@
-<p>medicine works!</p>
+<div class="stats-container">
+    <h1 class="page-title">健康指標</h1>
+  
+    <!-- 標籤區域：切換不同健康指標 -->
+    <mat-tab-group class="tab-group">
+      <mat-tab label="新增">
+        <div class="tab-content">
+          <h2>心跳</h2>
+          <p>當前心跳：<strong>75 BPM</strong></p>
+          <p>平均心跳：<strong>70 BPM</strong></p>
+          <p>動態心率：<strong>80 BPM</strong></p>
+          <p>靜止心率：<strong>60 BPM</strong></p>
+        </div>
+      </mat-tab>
+      <mat-tab-group style="color: aliceblue;" label="血壓">
+        <div class="tab-content">
+          <h2>血壓</h2>
+          <p>當前血壓：<strong>120/80 mmHg</strong></p>
+          <p>飯前血壓：<strong>130/85 mmHg</strong></p>
+          <p>飯後血壓：<strong>125/82 mmHg</strong></p>
+        </div>
+      </mat-tab-group>
+      <mat-tab-group label="血氧">
+        <div class="tab-content">
+          <h2>血氧</h2>
+          <p>當前血氧：<strong>98%</strong></p>
+        </div>
+      </mat-tab-group>
+      <mat-tab-group label="睡眠">
+        <div class="tab-content">
+          <h2>睡眠</h2>
+          <p>當前睡眠時間：<strong>7h 30m</strong></p>
+          <p>深度睡眠：<strong>3h 20m</strong></p>
+          <p>淺睡眠：<strong>2h 10m</strong></p>
+          <p>REM 睡眠：<strong>1h 00m</strong></p>
+          <p>睡眠質量：<strong>80%</strong></p>
+          <p>入睡時間：<strong>10:30 PM</strong></p>
+          <p>醒來時間：<strong>6:00 AM</strong></p>
+        </div>
+      </mat-tab-group>
+    </mat-tab-group>
+    <button class="back-home-btn" (click)="goHome()">
+      <mat-icon>home</mat-icon> <!-- 使用 mat-icon 顯示 "home" 圖標 -->
+    </button>
+  </div>
