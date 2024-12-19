@@ -1,59 +1,142 @@
 .stats-container {
-    text-align: center;
-    background-color: #202124;
-    color: white;
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 500px;
-    margin: auto;
-  
-    .page-title {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #00ffcc;
-    }
-  
-    .tab-group {
-      .mat-tab-label {
-        background-color: #101018;
-        color: #e0e0e0;  // 淺灰色的文字顏色
-        font-weight: bold;
-        padding: 10px 20px;
-        border-radius: 20px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-  
-        &:hover {
-          background-color: #00ffcc;
-          color: black;  // Hover 狀態下文字顏色為黑色
-        }
-  
-        &.mat-tab-label-active {
-          background-color: #00ffcc;
-          color: black;  // 活躍的 tab 文字顏色為黑色
-        }
+  text-align: center;
+  background-color: #1c6108;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+  height: 700px; // 保持長方形樣式
+  margin: auto;
+
+  .page-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00ffcc;
+    font-weight: bold;
+  }
+
+  .mat-tab-group {
+    margin-top: 20px;
+
+    .mat-tab-label {
+      background-color: #101018;
+      color: #e0e0e0;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: #00ffcc;
+        color: black;
       }
-  
-      .mat-tab-body {
-        background-color: #1e1e2f;
-        border-radius: 10px;
-        padding: 20px;
-        margin-top: 10px;
-  
-        h2 {
-          font-size: 1.5rem;
-          color: #00ffcc;
-        }
-  
-        p {
-          font-size: 1.1rem;
-          margin: 10px 0;
-          color: #e0e0e0;
-  
-          strong {
-            color: #ffffff;
+
+      &.mat-tab-label-active {
+        background-color: #00ffcc;
+        color: black;
+      }
+    }
+
+    .tab-content {
+      background-color: #1e1e2f;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 10px;
+      height: calc(100% - 80px); // 確保內容始終在長方形內
+
+      h2 {
+        font-size: 1.8rem;
+        color: #00ffcc;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        color: #e0e0e0;
+      }
+
+      .medication-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .medication-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #2d2d3f;
+          padding: 10px 15px;
+          border-radius: 10px;
+
+          .medication-info {
+            text-align: left;
+            color: #e0e0e0;
+
+            p {
+              margin: 5px 0;
+            }
+          }
+
+          .action-buttons {
+            display: flex;
+            gap: 10px;
+
+            .edit-btn {
+              background-color: #00ffcc;
+              color: black;
+              font-weight: bold;
+              border: none;
+              border-radius: 5px;
+              padding: 5px 10px;
+              cursor: pointer;
+              transition: background-color 0.3s ease, color 0.3s ease;
+
+              &:hover {
+                background-color: #009999;
+              }
+            }
+
+            .delete-btn {
+              background-color: #ff5252;
+              color: white;
+              font-weight: bold;
+              border: none;
+              border-radius: 5px;
+              padding: 5px 10px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+
+              &:hover {
+                background-color: #d32f2f;
+              }
+            }
           }
         }
       }
     }
   }
-  
+
+  .back-home-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00ffcc;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: #101018;
+      color: #e0e0e0;
+    }
+
+    mat-icon {
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+  }
+}

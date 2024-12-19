@@ -1,58 +1,86 @@
 .stats-container {
   text-align: center;
-  background-color: #202124;
+  background-color: #1c6108;
   color: white;
   padding: 20px;
   border-radius: 15px;
   max-width: 500px;
+  height: 700px; // 保持長方形樣式
+  margin: auto;
+  
   margin: auto;
 
   .page-title {
-    font-size: 2rem;
+    font-size: 2.5rem; // 調整字體大小
     margin-bottom: 20px;
-    color: #00ffcc;
+    color: #00ffcc; // 醒目的顏色
+    font-weight: bold; // 加粗
   }
 
-  .tab-group {
+  .mat-tab-group {
+    margin-top: 20px;
     .mat-tab-label {
-      background-color: #1e1e2f;
-      color: #e0e0e0;  // 淺灰色的文字顏色
+      background-color: #101018;
+      color: #e0e0e0;
       font-weight: bold;
+      font-size: 1.2rem; // 增大文字大小
       padding: 10px 20px;
       border-radius: 20px;
       transition: background-color 0.3s ease, color 0.3s ease;
 
       &:hover {
         background-color: #00ffcc;
-        color: black;  // Hover 狀態下文字顏色為黑色
+        color: black;
       }
 
       &.mat-tab-label-active {
         background-color: #00ffcc;
-        color: black;  // 活躍的 tab 文字顏色為黑色
+        color: black;
       }
     }
 
-    .mat-tab-body {
+    .mat-tab-body-wrapper {
       background-color: #1e1e2f;
       border-radius: 10px;
       padding: 20px;
       margin-top: 10px;
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem; // 增大標題字體
         color: #00ffcc;
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1.2rem; // 增大內容字體
         margin: 10px 0;
         color: #e0e0e0;
 
         strong {
-          color: #ffffff;
+          color: #ffffff; // 強調文字
         }
       }
+    }
+  }
+
+  .back-home-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00ffcc;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: #101018;
+      color: #e0e0e0;
+    }
+
+    mat-icon {
+      margin-right: 5px;
+      vertical-align: middle;
     }
   }
 }

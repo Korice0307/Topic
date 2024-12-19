@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-medicine',
+  selector: 'app-aleart',
   standalone: false,
-  templateUrl: './medicine.component.html',
-  styleUrl: './medicine.component.scss'
+
+  templateUrl: './aleart.component.html',
+  styleUrl: './aleart.component.scss'
 })
-export class MedicineComponent {
+export class AleartComponent {
   constructor(private router: Router) { }
 
   selectedIndex = 0; // 默認顯示第一個標籤（心跳）

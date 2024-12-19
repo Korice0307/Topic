@@ -1,0 +1,92 @@
+.alert-container {
+  text-align: center;
+  background-color: #1c6108;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+  height: 700px; // 保持長方形樣式
+  margin: auto;
+  
+    .page-title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #00ffcc;
+      font-weight: bold;
+    }
+  
+    .mat-tab-group {
+      margin-top: 20px;
+  
+      .mat-tab-label {
+        background-color: #101018;
+        color: #e0e0e0;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        border-radius: 20px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+  
+        &:hover {
+          background-color: #00ffcc;
+          color: black;
+        }
+  
+        &.mat-tab-label-active {
+          background-color: #00ffcc;
+          color: black;
+        }
+      }
+  
+      .mat-tab-body-wrapper {
+        background-color: #252540;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 10px;
+  
+        .tab-title {
+          font-size: 1.8rem;
+          color: #00ffcc;
+          margin-bottom: 20px;
+        }
+  
+        .log-entry {
+          background-color: #2e2e50;
+          border-radius: 10px;
+          padding: 15px;
+          margin-bottom: 15px;
+          color: #e0e0e0;
+  
+          p {
+            margin: 5px 0;
+          }
+  
+          strong {
+            color: #00ffcc;
+          }
+        }
+      }
+    }
+    .back-home-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #00ffcc;
+        color: black;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    
+        &:hover {
+          background-color: #101018;
+          color: #e0e0e0;
+        }
+    
+        mat-icon {
+          margin-right: 5px;
+          vertical-align: middle;
+        }
+      }
+  }
+  

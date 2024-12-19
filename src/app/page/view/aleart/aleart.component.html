@@ -1,0 +1,52 @@
+<div class="alert-container">
+    <h1 class="page-title">異常警報</h1>
+  
+    <!-- 標籤區域 -->
+    <mat-tab-group>
+      <!-- 心跳異常 -->
+      <mat-tab label="心跳異常">
+        <div class="tab-content">
+          <h2 class="tab-title">心跳異常日誌</h2>
+          <div class="log-entry">
+            <p><strong>時間:</strong> 2024/12/18 15:30</p>
+            <p><strong>心跳:</strong> 120 bpm</p>
+            <p><strong>狀態:</strong> 心跳過速，建議立即休息並聯絡醫生。</p>
+          </div>
+          <div class="log-entry">
+            <p><strong>時間:</strong> 2024/12/17 10:15</p>
+            <p><strong>心跳:</strong> 45 bpm</p>
+            <p><strong>狀態:</strong> 心跳過慢，建議就醫檢查。</p>
+          </div>
+        </div>
+      </mat-tab>
+  
+      <!-- 血壓異常 -->
+      <mat-tab label="血壓異常">
+        <div class="tab-content">
+          <h2 class="tab-title">血壓異常日誌</h2>
+          <div class="log-entry">
+            <p><strong>時間:</strong> 2024/12/16 20:45</p>
+            <p><strong>血壓:</strong> 160/100 mmHg</p>
+            <p><strong>狀態:</strong> 高血壓，建議放鬆並監測血壓。</p>
+          </div>
+        </div>
+      </mat-tab>
+  
+      <!-- 睡眠時間異常 -->
+      <mat-tab label="睡眠時間異常">
+        <div class="tab-content">
+          <h2 class="tab-title">睡眠時間異常日誌</h2>
+          <div class="log-entry">
+            <p><strong>時間:</strong> 2024/12/15 07:00</p>
+            <p><strong>睡眠時長:</strong> 4 小時</p>
+            <p><strong>狀態:</strong> 睡眠不足，建議增加休息時間。</p>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+    <button class="back-home-btn" (click)="goHome()">
+        <mat-icon>home</mat-icon>
+        返回主畫面
+      </button>
+  </div>
+  

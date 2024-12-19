@@ -1,10 +1,9 @@
 <div class="stats-container">
-  <h1 class="page-title">藥物管理
-  </h1>
+  <h1 class="page-title">健康指標</h1>
 
   <!-- 標籤區域：切換不同健康指標 -->
   <mat-tab-group class="tab-group">
-    <mat-tab style="color: aliceblue;" label="心跳">
+    <mat-tab label="新增">
       <div class="tab-content">
         <h2>心跳</h2>
         <p>當前心跳：<strong>75 BPM</strong></p>
@@ -13,21 +12,21 @@
         <p>靜止心率：<strong>60 BPM</strong></p>
       </div>
     </mat-tab>
-    <mat-tab-group label="血壓">
+    <mat-tab label="血壓">
       <div class="tab-content">
         <h2>血壓</h2>
         <p>當前血壓：<strong>120/80 mmHg</strong></p>
         <p>飯前血壓：<strong>130/85 mmHg</strong></p>
         <p>飯後血壓：<strong>125/82 mmHg</strong></p>
       </div>
-    </mat-tab-group>
-    <mat-tab-group label="血氧">
+    </mat-tab>
+    <mat-tab label="血氧">
       <div class="tab-content">
         <h2>血氧</h2>
         <p>當前血氧：<strong>98%</strong></p>
       </div>
-    </mat-tab-group>
-    <mat-tab-group label="睡眠">
+    </mat-tab>
+    <mat-tab label="睡眠">
       <div class="tab-content">
         <h2>睡眠</h2>
         <p>當前睡眠時間：<strong>7h 30m</strong></p>
@@ -38,9 +37,12 @@
         <p>入睡時間：<strong>10:30 PM</strong></p>
         <p>醒來時間：<strong>6:00 AM</strong></p>
       </div>
-    </mat-tab-group>
+    </mat-tab>
   </mat-tab-group>
+
+  <!-- 返回主畫面按鈕 -->
   <button class="back-home-btn" (click)="goHome()">
-    <mat-icon>home</mat-icon> <!-- 使用 mat-icon 顯示 "home" 圖標 -->
+    <mat-icon>home</mat-icon>
+    返回主畫面
   </button>
 </div>

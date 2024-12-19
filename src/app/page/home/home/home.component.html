@@ -4,9 +4,9 @@
       <div class="sidebar" [class.active]="menuActive">
         <button class="router-button" (click)="navigateToHeart('heart')" >指標分析</button>
         <button class="router-button" (click)="navigateToHeart('medicine')">藥物管理</button>
-        <button class="router-button" >異常警報</button>
-        <button class="router-button" >緊急呼叫</button>
-        <button class="router-button" >智能聊天</button>
+        <button class="router-button" (click)="navigateToHeart('aleart')">異常警報</button>
+        <button class="router-button" (click)="navigateToHeart('sos')">緊急呼叫</button>
+        <button class="router-button" (click)="navigateToHeart('aichat')">智能聊天</button>
       </div>
   
       <!-- 右側使用者資料區 -->

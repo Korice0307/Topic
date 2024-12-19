@@ -10,7 +10,10 @@ import { MatTabLabel, MatTabsModule } from '@angular/material/tabs';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { BackHomeButtonComponent } from './back-home-button/back-home-button.component'; 
-import { MatIconModule } from '@angular/material/icon';  // 引入 MatIconModule
+import { MatIconModule } from '@angular/material/icon';
+import { AleartComponent } from './page/view/aleart/aleart.component';
+import { SosComponent } from './page/view/sos/sos.component';
+import { AichatComponent } from './page/view/aichat/aichat.component';  // 引入 MatIconModule
 
 
 @NgModule({
@@ -20,6 +23,9 @@ import { MatIconModule } from '@angular/material/icon';  // 引入 MatIconModule
     MedicineComponent,
     HomeComponent,
     BackHomeButtonComponent,
+    AleartComponent,
+    SosComponent,
+    AichatComponent,
   ],
   imports: [
     BrowserModule,
